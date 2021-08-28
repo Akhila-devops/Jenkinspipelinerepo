@@ -1,26 +1,17 @@
 pipeline {
-agent any {
+  agent any
 label 'new node'
 }
 
 stages {
-  stage ('checkout')
-  {
-   steps
-       {
-        
+  stage ('checkout') {
+    steps {
          checkout scm
-
        }
   }
-}
-  stage ('creation of the folder')
-  {
-      steps
-      {
-        
+  stage ('creation of the folder') {
+      steps {
         sh 'cd /home/ubuntu; sudo mkdir pipejen1'
-        
-      }
+       }
   }
 }
