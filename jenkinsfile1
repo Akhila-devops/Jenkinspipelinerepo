@@ -16,4 +16,5 @@ stages {
             sh 'cd /home/ubuntu; sudo mkdir rohan'
         }
     }
+  }
 }
