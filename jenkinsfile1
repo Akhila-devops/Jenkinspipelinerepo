@@ -11,7 +11,7 @@ stages {
 }
   stage ('creation of the folder') {
     steps {
-      sh "cd/home/ubuntu, sudo mkdir empty"
+       sh"cd/home/ubuntu; sudo mkdir pipejen"
        }
     }
 }
