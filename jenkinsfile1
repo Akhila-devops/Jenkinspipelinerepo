@@ -9,9 +9,9 @@ stages {
        }
     }
 }
-stage ('creation of the folder') {
-  steps {
-    sh "cd/home/ubuntu, sudo mkdir empty"
-        }
-     }
+  stage ('creation of the folder') {
+    steps {
+      sh "cd/home/ubuntu, sudo mkdir empty"
+       }
+    }
 }
