@@ -1,26 +1,26 @@
 pipeline {
-    agent any
+agent any {
+label 'new node'
+}
 
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'building'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'deploying'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'testing'
-            }
-        }
-    }
+stages {
+  stage ('checkout')
+  {
+   steps
+       {
+        
+         checkout scm
+
+       }
+  }
+}
+  stage ('creation of the folder')
+  {
+      steps
+      {
+        
+        sh 'cd /home/ubuntu; sudo mkdir pipejen1'
+        
+      }
+  }
 }
