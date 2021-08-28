@@ -1,0 +1,17 @@
+pipeline {
+agent {
+label 'new node'
+}
+stages {
+  stage ('checkout') {
+    steps {
+      checkout scm
+       }
+    }
+}
+stage ('creation of the folder') {
+  steps {
+    sh "cd/home/ubuntu, sudo mkdir empty"
+        }
+     }
+}
