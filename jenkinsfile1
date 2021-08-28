@@ -1,17 +1,19 @@
 pipeline {
   agent any
-label 'new node'
-}
-
 stages {
-  stage ('checkout') {
-    steps {
-         checkout scm
+    stage ('greeting') {
+       steps {
+             echo 'good morning'
        }
-  }
-  stage ('creation of the folder') {
-      steps {
-        sh 'cd /home/ubuntu; sudo mkdir pipejen1'
-       }
-  }
+    }
+    stage ('creation of the folder') {
+        steps {
+            sh 'cd /home/ubuntu; sudo mkdir rahul'
+        }
+    }
+    stage ('creation of the another folder') {
+        steps {
+            sh 'cd /home/ubuntu; sudo mkdir rohan'
+        }
+    }
 }
