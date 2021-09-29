@@ -8,12 +8,12 @@ stages {
     }
     stage ('creation of the folder') {
         steps {
-            sh 'cd /home/ubuntu; sudo mkdir rahul'
+            sh 'cd /home/ubuntu; sudo mkdir manas'
         }
     }
     stage ('creation of the another folder') {
         steps {
-            sh 'cd /home/ubuntu; sudo mkdir rohan'
+            sh 'cd /home/ubuntu; sudo mkdir madhu'
         }
     }
   }
