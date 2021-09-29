@@ -6,15 +6,5 @@ stages {
              echo 'good morning'
        }
     }
-    stage ('creation of the folder') {
-        steps {
-            sh 'cd /home/ubuntu; sudo mkdir manas'
-        }
-    }
-    stage ('creation of the another folder') {
-        steps {
-            sh 'cd /home/ubuntu; sudo mkdir madhu'
-        }
-    }
-  }
+}
 }
